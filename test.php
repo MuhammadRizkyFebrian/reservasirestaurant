@@ -1,0 +1,1 @@
+aku adalah alpha dan alpha adalah aku
