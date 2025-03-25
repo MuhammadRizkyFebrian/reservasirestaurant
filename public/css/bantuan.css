@@ -1,0 +1,268 @@
+body {
+    padding-top: 13px;
+}
+
+/* Navbar Styling */
+.navbar {
+background: linear-gradient(to right, #FDD5DF, #FDD5DF);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .store-name {
+font-family: 'Cooper Black', cursive;
+text-decoration: none;
+font-size: 22px;
+font-weight: bold;
+color: #2B1818;
+}
+
+.nav-actions {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.nav-Menu {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.nav-Menu a {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+color: #2B1818;
+text-decoration: none;
+padding: 5px 10px;
+transition: color 0.3s ease, background-color 0.3s ease;
+border-radius: 5px;
+}
+
+.nav-Menu a:hover {
+background-color: #ffc8dd;
+color: #2B1818;
+}
+
+/* Container dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown menu (sembunyikan awalnya) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 8px 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+/* Menampilkan dropdown saat hover atau klik */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styling untuk item di dropdown */
+.dropdown-menu li {
+    padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #2B1818;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ffc8dd;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+.icon-container {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.icon-container i {
+font-size: 20px;
+color: #2B1818;
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.icon-container i:hover {
+color: #ffafcc;
+}
+
+.gambar-menu {
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+}
+
+.pink-button {
+background-color: #ffc8dd;
+color: #2B1818;
+border: none;
+padding: auto;
+border-radius: 5px;
+}
+header {
+text-align: center;
+padding: 20px;
+background-color: #FFF8F8;
+color: #2B1818;
+border-bottom: 2px solid #FFF8F8;
+margin-top: 60px;
+}
+
+header h1 {
+margin: 0;
+}
+
+header p {
+font-size: 14px;
+}
+
+.faq {
+max-width: 600px;
+margin: 20px auto;
+background: #FFF8F8;
+border-radius: 8px;
+padding: 20px;
+}
+
+.faq-item {
+margin-bottom: 15px;
+}
+
+.faq-question {
+cursor: pointer;
+background: #FFC0CB;
+padding: 10px;
+margin: 0;
+border-radius: 5px;
+font-weight: bold;
+color: #333;
+transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+background: #FFB6C1;
+}
+
+.faq-answer {
+display: none;
+padding: 10px;
+background: #f4f4f4;
+border-radius: 5px;
+margin-top: 5px;
+color: #333;
+}
+
+/*style untuk form bantuan*/
+.container {
+max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading untuk form */
+.container .question-form h3 {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 1.8rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Label input */
+.container .question-form label {
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+color: #555;
+margin-bottom: 5px;
+display: block;
+}
+
+/* Input dan Textarea */
+.container .question-form input,
+.container .question-form textarea {
+width: 100%;
+padding: 10px;
+font-size: 1rem;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Roboto', sans-serif;
+background-color: #f9f9f9;
+box-sizing: border-box;
+}
+
+/* Fokus pada input dan textarea */
+.container .question-form input:focus,
+.container .question-form textarea:focus {
+border-color: #ffc8dd;
+outline: none;
+background-color: #fff;
+box-shadow: 0 0 5px #ffc8dd;
+}
+
+/* Tombol submit */
+.container .question-form button {
+width: 100%;
+padding: 12px 20px;
+font-size: 1rem;
+font-family: 'Roboto', sans-serif;
+color: #2B1818;
+background-color: #ffc8dd;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover dan fokus pada tombol */
+.container .question-form button:hover {
+background-color: #ffc8dd;
+transform: scale(1.03);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+.container {
+padding: 15px;
+}
+.container .question-form h3 {
+font-size: 1.5rem;
+}
+}

@@ -16,3 +16,12 @@ Route::get('/register', [RegisterController::class, 'show'])->name('register');
 Route::get('/listereservasi/{id}/{nama}/{tanggal}/{jumlah_orang}', 
     [ListReservasiController::class, 'show']
 )->name('list.reservasi.detail');
+
+// P4 Bagian B By: Muhammad Rizky Febrian (3312401082)
+Route::get('/TentangKami', function () {
+    return view('TentangKami');
+})->name('TentangKami');
+
+Route::get('/bantuan', function () {
+    return view('bantuan');
+})->name('bantuan');
