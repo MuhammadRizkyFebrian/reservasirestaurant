@@ -25,3 +25,11 @@ Route::get('/TentangKami', function () {
 Route::get('/bantuan', function () {
     return view('bantuan');
 })->name('bantuan');
+
+Route::get('/FormulirPemesanan', function () {
+    return view('FormulirPemesanan');
+})->name('FormulirPemesanan');
+
+Route::get('/forgetpw', function () {
+    return view('forgetpw');
+})->name('forgetpw');
