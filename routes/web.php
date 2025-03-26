@@ -5,6 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ListReservasiController;
+use Illuminate\Http\Request;
+
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -33,3 +35,15 @@ Route::get('/FormulirPemesanan', function () {
 Route::get('/forgetpw', function () {
     return view('forgetpw');
 })->name('forgetpw');
+
+Route::get('/tagihan', function () {
+    return view('tagihan');
+});
+
+Route::get('/proses_pembayaran', function () {
+    return view('proses_pembayaran');
+});
+
+Route::post('/proses_pembayaran', function (Request $request) {
+    return "Pembayaran berhasil diproses untuk " . $request->nama . " sejumlah Rp " . number_format($request->jumlah, 0, ',', '.') . " melalui metode " . ucfirst($request->metode);
+});
