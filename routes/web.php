@@ -15,7 +15,8 @@ Route::get('/welcome', function () {
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [RegisterController::class, 'show'])->name('register');
-Route::get('/listereservasi/{id}/{nama}/{tanggal}/{jumlah_orang}', 
+Route::get(
+    '/listereservasi/{id}/{nama}/{tanggal}/{jumlah_orang}',
     [ListReservasiController::class, 'show']
 )->name('list.reservasi.detail');
 
@@ -47,3 +48,13 @@ Route::get('/proses_pembayaran', function () {
 Route::post('/proses_pembayaran', function (Request $request) {
     return "Pembayaran berhasil diproses untuk " . $request->nama . " sejumlah Rp " . number_format($request->jumlah, 0, ',', '.') . " melalui metode " . ucfirst($request->metode);
 });
+
+
+// P4 Bagian B oleh Rafles Yuda Stevenses Nababan, 3312401062
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
+Route::get('/pilihkursi', function () {
+    return view('pilihkursi');
+})->name('pilihkursi');
