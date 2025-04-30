@@ -22,7 +22,7 @@
             </a>
         </li>
         <li class="border-t border-gray-400 pt-2">
-            <a href="/pemesanan" class="flex items-center gap-2">
+            <a href="/admin/pemesanan" class="flex items-center gap-2">
                 <i class="bi bi-envelope"></i> Pemesanan
             </a>
         </li>
