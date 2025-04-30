@@ -7,7 +7,7 @@
     </h2>
     <ul class="menu space-y-1">
         <li class="border-t border-gray-400 pt-2">
-            <a href="/dashboard" class="flex items-center gap-2">
+            <a href="/admin/dashboard" class="flex items-center gap-2">
                 <i class="bi bi-speedometer2"></i> Dashboard
             </a>
         </li>
@@ -27,7 +27,7 @@
             </a>
         </li>
         <li class="border-t border-gray-400 pt-2">
-            <a href="/riwayat" class="flex items-center gap-2">
+            <a href="/admin/riwayat" class="flex items-center gap-2">
                 <i class="bi bi-clock-history"></i> Riwayat Transaksi
             </a>
         </li>
